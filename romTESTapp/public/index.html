@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Romantic Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div id="username-container">
+            <div class="chat-header">
+                <h1>✨ Sweet Messages ✨</h1>
+            </div>
+            <form id="username-form">
+                <input type="text" id="username-input" placeholder="✨ Enter your name..." required>
+                <button type="submit">Join Chat 💝</button>
+            </form>
+        </div>
+        <div id="chat-interface" style="display: none;">
+            <div class="chat-header">
+                <h1>✨ Sweet Messages ✨</h1>
+            </div>
+            <div class="messages" id="messages"></div>
+            <form id="message-form">
+                <input type="text" id="message-input" placeholder="Type your message...">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
